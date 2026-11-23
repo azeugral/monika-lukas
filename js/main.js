@@ -90,7 +90,7 @@
 
   /* ---------- trabalhos ---------- */
   var grade = d.getElementById('grade'), mais = d.getElementById('mais'), filtro = 'todos';
-  var passoN = 24, limite = passoN;
+  var passoN = innerWidth < 760 ? 12 : 24, limite = passoN;
 
   PECAS.forEach(function (p, i) {
     var f = d.createElement('figure'); f.className = 'item'; f.tabIndex = 0; f.dataset.i = i;
